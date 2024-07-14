@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Page</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="about.html" class="logo">
+            <img src="https://i.ibb.co/QcvBpbt/logo-Qadim-removebg.png" alt="Logo" class="logo-image" width="20%">
+        <ul class="nav-links"> 
+            <li><a href="MainPage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="ctn"><a href="ContactUs.html#contact-form">Contact us</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+    <section id="join-team">
+        <h2>Looking for a job?</h2>
+        <p>Fill out the form below.</p>
+        <form action="team-handler.php" method="post" id="team-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full_name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="cover-letter">Cover Letter:</label>
+            <textarea id="cover-letter" name="cover_letter" rows="4" required></textarea>
+
+            <label for="resume">Resume (PDF only):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+            <input type="submit" value="Submit Application" class="submit-btn">
+        </form>
+    </section>
+</body>
+</html>
